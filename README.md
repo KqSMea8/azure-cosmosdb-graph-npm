@@ -101,7 +101,7 @@ Note that the Spidering process is intentionally decoupled from the Wrangling pr
 and that intermediate files are produced by the Wrangling process to increase clarity
 and understanding.
 
-Finally, load your Azure CosmosDB database with the generated file **data/gremlin/gremlin_load_file_uniq.txt**.
+Finally, load your Azure CosmosDB database with the generated file **data/gremlin/gremlin_load_file.txt**.
 
 TODO...
 
