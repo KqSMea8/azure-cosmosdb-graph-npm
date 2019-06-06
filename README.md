@@ -140,13 +140,19 @@ $ ./webserver.sh
 
 ![splash-screen](img/webapp-splash-screen.png)
 
+---
+
 #### Bill-of-Material View
 
 ![bom-view](img/webapp-bom-view.png)
 
+---
+
 #### Library View
 
 ![library-view](img/webapp-library-view.png)
+
+---
 
 #### Maintainer View
 
