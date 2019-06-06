@@ -8,11 +8,16 @@ An example Bill-of-Material application with NPM data using Azure CosmosDB Graph
 
 ## Links
 
+- https://azure.microsoft.com/en-us/services/cosmos-db/
+- https://docs.microsoft.com/en-us/azure/cosmos-db/gremlin-support
+- https://tinkerpop.apache.org/
 - https://www.npmjs.com
-- 
-- https://gist.github.com/anvaka/8e8fa57c7ee1350e3491
+- https://www.npmjs.com/package/@azure/cosmos
+- https://www.npmjs.com/package/gremlin
 - https://docs.microsoft.com/en-us/javascript/api/overview/azure/?view=azure-node-latest
+- https://github.com/Azure-Samples/azure-cosmosdb-graph-bulkexecutor-dotnet-getting-started
 
+---
 
 ## Azure Setup
 
@@ -44,7 +49,7 @@ AZURE_COSMOSDB_GRAPHDB_URI=https://cjoakimcosmosdbgremlin.documents.azure.com:44
 PORT=3000  (Also add this environment variable for the localhost webserver port)
 ```
 
-
+---
 
 ## Batch Processing Overview
 
