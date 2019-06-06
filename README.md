@@ -113,23 +113,54 @@ Also load the Azure CosmosDB Graph database, views collection, with the material
 $ ./load_materialized_views.sh
 ```
 
+---
 
 ## Web Application
 
 The Web Application for this project is implemented with Node.js and the Express
 web framework.  D3.js is used in the client-side browser code for Graph Visualization.
 
-TODO...
+```
+$ cd webapp
+$ npm install
+
+$ ./webserver.sh
+    ...
+    Express server listening on port 3000
+    ...
+```
+
+### Web App Screen Shots
+
+#### Splash Screen
+
+![splash-screen](img/webapp-splash-screen.png)
+
+#### Bill-of-Material View
+
+![bom-view](img/webapp-bom-view.png)
+
+#### Library View
+
+![library-view](img/webapp-library-view.png)
+
+#### Maintainer View
+
+![maintainer-view](img/webapp-maintainer-view.png)
+
+---
 
 # Gremlin Queries
 
 ```
 g.V().count()
 
-g.V("tcx-js")
-g.V("tcx-js").inE()
-g.V("tcx-js").outE()
-g.V("tcx-js").bothE()
+g.V(["tcx-js","tcx-js"])
+g.V(["express","express"])
 
 g.V(["tcx-js", "tcx-js"]).emit().repeat(outE("uses_lib").inV()).times(16).path().by("id")
+g.V(["express", "express"]).emit().repeat(outE("uses_lib").inV()).times(16).path().by("id")
+
+g.V(["MAINT-cjoakim","MAINT-cjoakim"])
+g.V(["MAINT-tjholowaychuk","MAINT-tjholowaychuk"])
 ```
