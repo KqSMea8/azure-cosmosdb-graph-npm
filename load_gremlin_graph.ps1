@@ -4,6 +4,6 @@
 
 echo ''
 echo '=== load_gremlin_graph ...'
-node load_gremlin_graph.js data/gremlin/gremlin_load_file.txt 60 > tmp/load_gremlin_graph.txt
+node load_gremlin_graph.js data/gremlin/gremlin_load_file.txt 60
 
 echo 'done'
