@@ -4,6 +4,6 @@
 
 echo ''
 echo '=== load_materialized_views ...'
-node load_materialized_views.js dev views 50 > tmp/load_materialized_views.txt
+node load_materialized_views.js dev views 50
 
 echo 'done'
