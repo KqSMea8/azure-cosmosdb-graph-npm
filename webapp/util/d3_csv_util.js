@@ -2,7 +2,7 @@
 
 // Class D3CsvUtil is used to create CSV content for D3.js
 // from the results of a Gremlin Dependency Graph query.
-// Chris Joakim, Microsoft, 2019/06/05
+// Chris Joakim, Microsoft, 2019/06/06
 
 const events = require('events');
 const util   = require('util');

@@ -1,7 +1,7 @@
 'use strict';
 
 // Class CosmosDbDao implements DAO functionality for both the CosmosDB Gremlin/Graph.
-// Chris Joakim, Microsoft, 2019/06/05
+// Chris Joakim, Microsoft, 2019/06/06
 
 // Node.js standard libraries
 const events = require('events');
@@ -24,6 +24,7 @@ class CosmosDbDao extends events.EventEmitter {
         this.cosmos_gremlin_key    = process.env.AZURE_COSMOSDB_GRAPHDB_KEY;    // secret
         this.cosmos_gremlin_db     = process.env.AZURE_COSMOSDB_GRAPHDB_DBNAME; // dev
         this.cosmos_gremlin_graph  = process.env.AZURE_COSMOSDB_GRAPHDB_GRAPH;  // npm
+        this.cosmos_gremlin_views  = process.env.AZURE_COSMOSDB_GRAPHDB_VIEWS;  // views
         this.cosmos_gremlin_uri    = process.env.AZURE_COSMOSDB_GRAPHDB_URI;    // https://cjoakimcosmosdbgremlin.documents.azure.com:443/
         this.cosmos_gremlin_wssuri = 'wss://' + this.cosmos_gremlin_acct + '.gremlin.cosmosdb.azure.com:443/gremlin';
         this.graph_coll_link       = '/dbs/' + this.cosmos_gremlin_db + '/colls/' + this.cosmos_gremlin_graph;
@@ -31,6 +32,7 @@ class CosmosDbDao extends events.EventEmitter {
         console.log('cosmos_gremlin_acct:   ' + this.cosmos_gremlin_acct);
         console.log('cosmos_gremlin_db:     ' + this.cosmos_gremlin_db);
         console.log('cosmos_gremlin_graph:  ' + this.cosmos_gremlin_graph);
+        console.log('cosmos_gremlin_views:  ' + this.cosmos_gremlin_views);
         console.log('cosmos_gremlin_wssuri: ' + this.cosmos_gremlin_wssuri);
         console.log('graph_coll_link:       ' + this.graph_coll_link); 
 
@@ -91,8 +93,8 @@ class CosmosDbDao extends events.EventEmitter {
     }
 
     async materialized_library_view(bom_id) {
-        var db_name   = 'dev';  // TODO - env var
-        var coll_name = 'views';
+        var db_name   = this.cosmos_gremlin_db;
+        var coll_name = this.cosmos_gremlin_views;
         var query_spec = {};
         query_spec['query'] = util.format('SELECT * from c where c.pk = "%s" and c.doctype = "library"', bom_id);
         query_spec['parameters'] = [];
@@ -100,8 +102,8 @@ class CosmosDbDao extends events.EventEmitter {
     }
 
     async materialized_maintainer_view(maint_id) {
-        var db_name   = 'dev';  // TODO - env var
-        var coll_name = 'views';
+        var db_name   = this.cosmos_gremlin_db;
+        var coll_name = this.cosmos_gremlin_views;
         var query_spec = {};
         query_spec['query'] = util.format('SELECT * from c where c.pk = "%s" and c.doctype = "maintainer"', maint_id);
         query_spec['parameters'] = [];
