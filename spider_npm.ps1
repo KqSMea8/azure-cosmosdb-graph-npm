@@ -2,14 +2,13 @@
 # PowerShell script to execute the "spidering" process vs npm.
 # Chris Joakim, Microsoft, 2019/06/06
 
-iterations=10
-
-rm -rf data/libs/
-mkdir p- data/libs/
+Remove-Item data\libs -Recurse -Force
+mkdir -p data/libs/
+mkdir tmp
 
 date > tmp/spider_start.txt
 
-node main.js spider_npm $iterations > tmp/spider_npm.txt
+node main.js spider_npm 10 > tmp/spider_npm.txt
 
 date > tmp/spider_finish.txt
 
