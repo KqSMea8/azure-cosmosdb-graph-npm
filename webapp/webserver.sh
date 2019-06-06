@@ -2,5 +2,6 @@
 
 grunt 
 
-nodemon bin/www
+npm outdated
 
+nodemon bin/www
