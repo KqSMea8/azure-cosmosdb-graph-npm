@@ -1,7 +1,7 @@
 {
   "name": "@azure/ms-rest-js",
   "dist-tags": {
-    "latest": "1.8.7",
+    "latest": "1.8.10",
     "alpha": "1.9.0-alpha.4",
     "preview": "1.9.0-preview.1"
   },
@@ -28,6 +28,8 @@
     "1.8.4",
     "1.8.6",
     "1.8.7",
+    "1.8.8",
+    "1.8.10",
     "1.9.0-alpha.2",
     "1.9.0-alpha.3",
     "1.9.0-alpha.4",
@@ -36,7 +38,7 @@
   "time": {
     "created": "2018-11-09T22:28:41.874Z",
     "1.1.0": "2018-11-09T22:28:42.221Z",
-    "modified": "2019-05-30T18:43:52.700Z",
+    "modified": "2019-06-05T00:28:14.043Z",
     "1.1.1": "2018-11-14T19:37:56.745Z",
     "1.1.2": "2018-11-29T17:07:05.529Z",
     "1.2.0": "2018-12-04T04:47:47.956Z",
@@ -63,7 +65,9 @@
     "1.9.0-alpha.2": "2019-05-22T16:17:48.819Z",
     "1.9.0-alpha.3": "2019-05-22T22:08:58.416Z",
     "1.9.0-alpha.4": "2019-05-23T21:12:55.577Z",
-    "1.9.0-preview.1": "2019-05-30T18:43:50.067Z"
+    "1.9.0-preview.1": "2019-05-30T18:43:50.067Z",
+    "1.8.8": "2019-06-03T21:49:53.277Z",
+    "1.8.10": "2019-06-05T00:28:10.894Z"
   },
   "maintainers": [
     "amarzavery <amarzavery@gmail.com>",
@@ -94,8 +98,8 @@
     "url": "http://github.com/Azure/ms-rest-js/issues"
   },
   "license": "MIT",
-  "readmeFilename": "",
-  "version": "1.8.7",
+  "readmeFilename": "README.md",
+  "version": "1.8.10",
   "tags": [
     "isomorphic",
     "browser",
@@ -115,7 +119,7 @@
     "./es/lib/defaultHttpClient.js": "./es/lib/defaultHttpClient.browser.js"
   },
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.19.0",
     "form-data": "^2.3.2",
     "tough-cookie": "^2.4.3",
     "tslib": "^1.9.2",
@@ -226,12 +230,12 @@
     "all": true
   },
   "dist": {
-    "integrity": "sha512-JTVf4hu+/TnOQW1bprK+wxCBgJdZR6aC3oeAW35CfbxL4NVVgwEQ4+c1JOG8ph0WHGEL8bfyDF2vIjV/RuHkdg==",
-    "shasum": "0b4e31929beb99aa1615e223add1c91f88828edf",
-    "tarball": "https://registry.npmjs.org/@azure/ms-rest-js/-/ms-rest-js-1.8.7.tgz",
+    "integrity": "sha512-6c5IWh1bU+0J/B52QOGJPo4v895ZDvPlI0qCWJ6t2h+zsRoZW3V64xIyaUuvJ4eCbkvHw6eHq6F2wigMyngR9g==",
+    "shasum": "10f9a8fa45221d19bda064219acc7454c14f3104",
+    "tarball": "https://registry.npmjs.org/@azure/ms-rest-js/-/ms-rest-js-1.8.10.tgz",
     "fileCount": 246,
-    "unpackedSize": 1756052,
-    "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJc3cC6CRA9TVsSAnZWagAAEYsP/3j3pjvmzDaJGJJRnstc\nVaBp7grqSuDYqY1y0T0L44Vng0p4cjC/zljesHuqTT/4baVi3rjD41cGp35L\nzaoNCD783MqC4zcLIOJearj6q8taoClvWgcasVJQsBmb4itOuYoyxkgDRGAc\nVvfl+ncLEWlig8x7ExSpBf4KOXsWoW13+Ff4WYQMnbyqOwX+7QapPO7YWQr4\n4RoD1WrhrGFG+h6jvxBrWqZ10B7YJLW52glUWLuS8AJ0lVjzOaHKbtl8A48Y\nNsBwmnDywKO7dcmcCGzqJiC7eVkIeYtfz3RqJ4yg/6caM45C4cNsSGYvdlMM\nq0G55CZp7opFgYmfpPPfo94c4Ukgsxuj473IdQcwxe4d5bHun+91yzS8gqsI\n3ezLtmwL/y/TDa6tkDHrS8YsXDStKSMwtXuXHW8ltpwTAprYAYnATsUU6OxG\n1v+xxKDXkvtw/2can6+5pTKGReQpYvMS65DLBkQnC/L4lUwMDOYO8kIJMLEG\nlWjwmwc038bQBIGaxtVVDzjazuUIb4oGStAEi9uYYbenMobDHoImoDVFqy2R\ntfdHx5WxB1WIhu9w5TRPC89dYSassnJU+OsBQLs4p9fFiZZcLArz8Fqazvep\n7pFqkgIx6RVGgQrrv3G13Vfti/knaCX7fwIEdQDNNYa9xeGE8cNlb0FGcpjn\nsB0a\r\n=j5hM\r\n-----END PGP SIGNATURE-----\r\n"
+    "unpackedSize": 1756058,
+    "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJc9wybCRA9TVsSAnZWagAAOzoP+wRWnfsjxPAycHMrdV22\nNYvMnOVjZ2zj3BFEI/5fgc3xM6tUrycez2w6VrOM7zp+kQ63aPmr0UACAGL+\nfaWnoPMumeMi6x1279jCrrUgQj091G3ntWKDkf/pRETBenn89b1Hg+bmpqgH\n7Z9OTG/R77dQuKZtKV0gfpKd13WT9eT4ltisSVzyi3E8qUf4gKt+jYDuTgYv\nTB/adRoVGevuARK42CnjYRY6a+BXGGrlzHAscp7fI2HF3FthXeGnbaqHf3VJ\nLqGXI79OVHVv4fYj/8HhMjoX0Wmw443ZmNgn3QtNK1Ge9kr6Y/qWhYFJ6EGE\noE5OStFevM2kH+V1Tyq0JsGDGG1MyXIwa0wkIpncHh4McKMNWZnwMLJJNpHr\nQ6yTWmQhoxrGVr1T+7CD3ypDP2kbd2TjPinDaMcGz6WX+pdrWA3yZWXvh/33\nCxjzNU+KDzWwnPgLvgpcVJDJ0Wowi2wm3nbtVpLtzIAAhbq/qkU+MgLcrIoj\nJwEG6FaKpFjzcbOJs+E6mRWb7mck2BcPFE0JEvABpXPTBjDMc5JQtK+tw763\nBA+hvJ6G/VG+OFS4ALQyefVAH/8wbjYMiqHcj8KuOqc+hfXROteaQBmWmD/b\nsoktc9rqVkm+9BpibEgIlqvpZcchTnLks7+cCt5DULQ40CFnL6vKIy+U+d8F\nMVIg\r\n=7TON\r\n-----END PGP SIGNATURE-----\r\n"
   },
   "directories": {}
 }

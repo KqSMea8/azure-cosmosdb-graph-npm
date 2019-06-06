@@ -2,7 +2,7 @@
   "name": "chokidar",
   "description": "A neat wrapper around node.js fs.watch / fs.watchFile / fsevents.",
   "dist-tags": {
-    "latest": "3.0.0",
+    "latest": "3.0.1",
     "1.0.0-rc1": "1.0.0-rc1",
     "1.0.0-rc1.1": "1.0.0-rc1.1",
     "1.0.0-rc2": "1.0.0-rc2",
@@ -92,14 +92,15 @@
     "2.1.4",
     "2.1.5",
     "2.1.6",
-    "3.0.0"
+    "3.0.0",
+    "3.0.1"
   ],
   "maintainers": [
     "es128 <elan.shanker+npm@gmail.com>",
     "paulmillr <paul@paulmillr.com>"
   ],
   "time": {
-    "modified": "2019-05-17T16:22:36.029Z",
+    "modified": "2019-06-02T21:56:39.241Z",
     "created": "2012-04-26T01:32:10.158Z",
     "0.1.1": "2012-04-26T01:32:12.087Z",
     "0.2.0": "2012-05-04T13:53:24.862Z",
@@ -185,7 +186,8 @@
     "2.1.4": "2019-03-22T10:12:13.889Z",
     "2.1.5": "2019-03-22T21:18:23.993Z",
     "3.0.0": "2019-04-30T16:52:43.801Z",
-    "2.1.6": "2019-05-15T12:36:00.092Z"
+    "2.1.6": "2019-05-15T12:36:00.092Z",
+    "3.0.1": "2019-06-02T21:56:36.311Z"
   },
   "author": "Paul Miller (https://paulmillr.com)",
   "repository": {
@@ -384,11 +386,11 @@
   },
   "readmeFilename": "README.md",
   "license": "MIT",
-  "version": "3.0.0",
   "contributors": [
     "Paul Miller (https://paulmillr.com)",
     "Elan Shanker"
   ],
+  "version": "3.0.1",
   "engines": {
     "node": ">= 8"
   },
@@ -400,7 +402,7 @@
     "is-binary-path": "^2.1.0",
     "is-glob": "^4.0.1",
     "normalize-path": "^3.0.0",
-    "readdirp": "^3.0.1",
+    "readdirp": "^3.0.2",
     "fsevents": "^2.0.6"
   },
   "optionalDependencies": {
@@ -438,14 +440,14 @@
       "toString"
     ]
   },
-  "gitHead": "7b8e02af255f54bcc3978f2a926cdc0b0ca107b3",
+  "gitHead": "b9cd3eec337c95b27a4a6616c89a95465bb1a887",
   "dist": {
-    "integrity": "sha512-ebzWopcacB2J19Jsb5RPtMrzmjUZ5VAQnsL0Ztrix3lswozHbiDp+1Lg3AWSKHdwsps/W2vtshA/x3I827F78g==",
-    "shasum": "6b538f0fd6d5d31d5dd2b59e05426bec0f49aa40",
-    "tarball": "https://registry.npmjs.org/chokidar/-/chokidar-3.0.0.tgz",
+    "integrity": "sha512-2ww34sJWehnbpV0Q4k4V5Hh7juo7po6z7LUWkcIQnSGN1lHOL8GGtLtfwabKvLFQw/hbSUQ0u6V7OgGYgBzlkQ==",
+    "shasum": "98fe9aa476c55d9aea7841d6325ffdb30e95b40c",
+    "tarball": "https://registry.npmjs.org/chokidar/-/chokidar-3.0.1.tgz",
     "fileCount": 7,
-    "unpackedSize": 78624,
-    "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJcyH1cCRA9TVsSAnZWagAAkZkP/iKwS/1cA2j0YQdd19AA\nmAOOIaIBrx+BsksdTWmr0U7MfusuKI4keyS7C7gQ4ZLPccBT4Eiqzo8JHlKT\nu8u303kd+MOEBxbm4MVu3CJZKtuiFKz8eN1gfrMWmgye1rEYkYK7hclHNRXq\nT3vxbey7jqem0y0/JuBsU/4wF0AQfLPl/EJkXZD8woBPdxUOeGSed3KQGjw4\nZKApt6eNfuST1jAZU6XMcZKLYimGs+XIqLdq2jOrOCxDQPLWkdlW3++47NGK\nWZTdOD5WRvP6zy2bJwhKMiU2cB1d3MSYqxJDhyq0xRVsYQzXUqNN9zG4BaoP\nXkTkmYbVd5/4fufyC3FY0BEL5UhR/DKp7DRr2wa9+qDgQKFpfl4r6O9ap1Oq\nGA4ISClwVvYQ5v7BLuZwh9oD6Ek1jdXzlDEFDmyaQ0pbbmWFNiVOr93AIOWB\nhxvz7ajTAW3OP4a6I9Ex4gqJ2dgf8x3Ef2DgEPoTqCMLxWszR98xrscAfbg7\n5hlgmX9+q08YOZrvs/43AP+CcXnailBx7g8SJM2txju3kzcK2qBvdc5vEH52\nCZco9TwhBsy5I4B+VUgogjSdlwL9Maf5ujDy2Hm4e2hIsqUJv5ClCKFijg19\n3Sn5xHbhXc1+mV24CdhGrxNjni/RKrrt0gsvTY+x+KY6rSD5Kykyz9ao+l9u\nS+Dp\r\n=Tau4\r\n-----END PGP SIGNATURE-----\r\n"
+    "unpackedSize": 81090,
+    "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJc9EYVCRA9TVsSAnZWagAADtkP/27LzWHPxixtrY1aF1cO\nhpYIgs5OiIV6as8JVl8WB1HX7eJrroNU81pquue5x/erOK4/MflT33rLUVRe\nwYpVNi2rkkfVe9DCwvvambLCQWCz0qhFaOK5KQBmFwbZnyLuHkBDt69ql7Hp\nbsPFRTAd85hcATrf+01xQ1Ed+N44hUjnKQ0zLm75NaoeCVM3knWPVX8ckaov\n3iOgaL/wVQvk157IKJ5WFlpBIX+dk0TpvXpofhB/EN4qhH+ByR7Z5xqT04FK\nFha6/Ct8O5dved6huRrP+6L1ax9Z3kf5rM2Hc9FvWeQ0r58Mq2j/XqK/tyPl\nd7D1Dy1BqSZ3Lb3ZLCGXTcsq1thY1kRG/AIWhKoNPL7HHPEeOnktoSTAD09X\nfOl1A7McSbhm9IKRK4NXQaTI9Ayb61J5X9XxTXzeJZQczoJp6rR1mCTVLYMr\nPkDu7eQquHjS1179XhbRZPCmZhgeNsgNwZBnIMRKUjXPW8lRpqvlroNa/Mi+\nXGYO3y+wOS+szWiOyZU0uYtWZLVLZOHuyuM8JeQSZJj2bLcYDv29Cb/5P3wP\niCzbFPxQtzFKLmFSvTIEG5I9vCdgmmVVjh6otq12louExFboMGzs7xpQaQts\nXP1ZgiWFRIf6UXhUuq/ckpGgOclkRSFyV/fTNmnE0ysJy0yhUja16iDykBc9\nv8z7\r\n=fgXE\r\n-----END PGP SIGNATURE-----\r\n"
   },
   "directories": {}
 }

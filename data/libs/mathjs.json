@@ -3,7 +3,7 @@
   "description": "Math.js is an extensive math library for JavaScript and Node.js. It features a flexible expression parser with support for symbolic computation, comes with a large set of built-in functions and constants, and offers an integrated solution to work with dif",
   "dist-tags": {
     "latest": "5.10.3",
-    "beta": "6.0.0-beta.2"
+    "beta": "6.0.0-beta.3"
   },
   "versions": [
     "0.0.2",
@@ -169,13 +169,14 @@
     "5.10.3",
     "6.0.0-beta.0",
     "6.0.0-beta.1",
-    "6.0.0-beta.2"
+    "6.0.0-beta.2",
+    "6.0.0-beta.3"
   ],
   "maintainers": [
     "josdejong <wjosdejong@gmail.com>"
   ],
   "time": {
-    "modified": "2019-05-21T18:43:32.447Z",
+    "modified": "2019-06-05T10:18:46.634Z",
     "created": "2013-02-17T00:39:13.911Z",
     "0.0.2": "2013-02-17T00:39:17.052Z",
     "0.1.0": "2013-02-18T20:38:11.328Z",
@@ -343,7 +344,8 @@
     "5.10.1": "2019-05-17T17:49:06.388Z",
     "5.10.2": "2019-05-18T06:14:14.565Z",
     "5.10.3": "2019-05-18T06:42:48.089Z",
-    "6.0.0-beta.2": "2019-05-21T18:43:29.828Z"
+    "6.0.0-beta.2": "2019-05-21T18:43:29.828Z",
+    "6.0.0-beta.3": "2019-06-05T10:18:43.871Z"
   },
   "author": "Jos de Jong <wjosdejong@gmail.com> (https://github.com/josdejong)",
   "repository": {

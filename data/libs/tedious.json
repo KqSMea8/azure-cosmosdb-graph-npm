@@ -2,9 +2,9 @@
   "name": "tedious",
   "description": "A TDS driver, for connecting to MS SQLServer databases.",
   "dist-tags": {
-    "latest": "6.1.1",
+    "latest": "6.1.2",
     "beta": "1.11.5-beta.5-gb7b6e4d",
-    "next": "6.1.2"
+    "next": "6.2.0"
   },
   "versions": [
     "0.0.0-dev",
@@ -116,7 +116,8 @@
     "6.0.1",
     "6.1.0",
     "6.1.1",
-    "6.1.2"
+    "6.1.2",
+    "6.2.0"
   ],
   "maintainers": [
     "arthurschreiber <schreiber.arthur@googlemail.com>",
@@ -128,7 +129,7 @@
     "v-suhame <v-suhame@microsoft.com>"
   ],
   "time": {
-    "modified": "2019-05-26T09:04:45.618Z",
+    "modified": "2019-06-05T19:25:24.575Z",
     "created": "2011-12-04T21:55:08.096Z",
     "0.0.1": "2011-12-04T21:55:09.620Z",
     "0.0.2": "2012-01-08T17:09:08.076Z",
@@ -241,7 +242,8 @@
     "6.0.1": "2019-03-16T10:44:18.150Z",
     "6.1.0": "2019-03-16T12:28:30.783Z",
     "6.1.1": "2019-04-09T08:53:06.622Z",
-    "6.1.2": "2019-05-26T09:04:43.077Z"
+    "6.1.2": "2019-05-26T09:04:43.077Z",
+    "6.2.0": "2019-06-05T19:25:20.245Z"
   },
   "author": "Mike D Pilsbury <mike.pilsbury@gmail.com>",
   "repository": {
@@ -326,7 +328,7 @@
     "url": "https://github.com/tediousjs/tedious/issues"
   },
   "license": "MIT",
-  "version": "6.1.1",
+  "version": "6.1.2",
   "main": "./lib/tedious.js",
   "engines": {
     "node": ">= 6"
@@ -394,14 +396,14 @@
       "@commitlint/config-conventional"
     ]
   },
-  "gitHead": "776f4a199ff29f0b633938dcb8611cd30a577973",
+  "gitHead": "40d816d495a6204ce12aa59bc223a3acac9b97d9",
   "dist": {
-    "integrity": "sha512-gmNWUqIVrZXvkfnkAHRGVeHlDPk7xTDuJYHp48GRSQFiLtKbl2ZkGDjR6wXJqgP8aZzhEUYZeqWBdxKK6W/F+A==",
-    "shasum": "db051f8c3e99afe7788ce1db25112cd86e9d991a",
-    "tarball": "https://registry.npmjs.org/tedious/-/tedious-6.1.1.tgz",
+    "integrity": "sha512-WEjzkyG+dkojPr/DDoXYs3O37kUXyutRsDWStdzEBNpkwzvgAD9uzCZZbwhBqxS9PfGLry4av1yQset5jRfgiQ==",
+    "shasum": "86d009641f46c397fe2d56a2c8f1c2b7a9a03734",
+    "tarball": "https://registry.npmjs.org/tedious/-/tedious-6.1.2.tgz",
     "fileCount": 106,
-    "unpackedSize": 318390,
-    "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJcrF1zCRA9TVsSAnZWagAAPHEP/2xl4yxhlgmMHNmlLBlP\nqV08YVmmVXth3ljMqXt20xlAIm71BzkepqSGfA+/6yiZhWiDUGLJSNmu57L0\nhX+m9evySqAVbxeriwV7cBRUbvVk0kQsmyJLpv/msXwwHZ1aZJlwHHB7KQ/U\n/nwV5aeDCl7nDEi4UGx6R9W4mr2OFd1lJNz9F4C2nHEBSgonuqSa/LlVugrE\nFBdMn53OfN55KG+93Td1ljwo4tStNR8KVG400mM1OHXfPzGfap1OhfrZOnIf\nvUGh7BKqaTaDU4P9BcVao8pMKWctViIZr2Ac/tGkzVQjW9dc9GEJuUdpwDBQ\nfFSYSRsfqB2MYQo48lhHjArW/Z8/3UqchyYAYigC1VUedNgUs14Qou1Kx1dl\nk03RxBDBR9MBYzGUBoD2aSwgGSIzLWNF9XfSMVkoGOHhfc5p8M5h3TYsMIZw\nBnK+BRnqwGLPS9gxiEe5ZaDoK43mpQZHmRApl0EXqsXteVgdy2cLuxQI+bS1\nsnNVIZjTm0WQxQmNZagngCi8plJ+vDQkfM00IhET/odYqq6xRKGQgaks8IVP\n/D5agOhYkiN/HA8HpJx3g3F+VsNDm76vx4pUDdJHpXMKyzd4rt22kAk+4NUo\nEiHXMa+s/h80yoM8AxMtfEV3NWptSYcpuYIvFUvEf9ULYkgif0nPmD0NrhnQ\nzHOZ\r\n=Q227\r\n-----END PGP SIGNATURE-----\r\n"
+    "unpackedSize": 318359,
+    "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJc6larCRA9TVsSAnZWagAAy7cP/ijA8PPr1vJFC4LrVJh2\nwULmUzjLZtbhH0Be3OHrHIn7nYM6UizombcLVoS4hCe8h/eE6N720ketuFyF\nIoV8h7igFTttvNWwY8YBXK82QdtfJ4YpG3e9LRTPpdauzseg7uSf2VAh5FOA\n6YWAn1Px/h9bzy72gRHnlPuvncoKQNxLNoWMlhGvxuN/E11xb7tqDdTNOvsu\nPTH6Xq1CooynJQSazS7lKotLqrq446MOTHFqve7F8KnTcHusteRXfkBS/rlO\n3LYDW+mrapH81L/cd7ZydJLFYuFKsdHTnAcqX+/9aZf5MIgITEYoOrqlQVGq\nz3prG5SZAMfXRoR7VlKU9IQcCZmGjzJattcky7+IrWnomiK810lQyYC2c73S\nc/C4xZpjfvWpNxA+fOpm8VdpmvnIzZOXUPFgnybcv35doMOn6oC70ZYGrqmV\ndFEaPO4SycUpqJgAh3vO7rlJoU6iqSa7WyvmKOLrvtf8EDuuNTFk21y6j07t\nnALkTzPcReXRSFObnLVP3S5hplRqzUEk8nUPny/rELF6Wm0kQkQncd/Aw52r\nSbeWafl2ppVeFcb+OKk1RZp38/lMEKxTcaIM3Ufn+IC7YC8KCHtTddyxZal9\noiOJLr0ef+FgNAkSIECCyFYOJLesuRDF14N4Rz0m51+UjvTpBQzI/Iy4Se09\nQ4YI\r\n=IpmJ\r\n-----END PGP SIGNATURE-----\r\n"
   },
   "directories": {}
 }
