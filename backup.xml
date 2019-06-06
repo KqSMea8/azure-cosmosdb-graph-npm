@@ -50,8 +50,7 @@
 
         <zip zipfile="${_zipFilename}"
              basedir="${_projectDir}"
-             excludes=".git/, bin/, include/, lib/, man/,  
-                node_modules/, **/*.db" />
+             excludes=".git/, tmp/, node_modules/, webapp/node_modules/" />
 
         <echo message="done" />
     </target>
