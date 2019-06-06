@@ -1,0 +1,35 @@
+{
+  "name": "azure-cosmosdb-graph-npm-webapp",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Batch process for an example Bill-of-Material application with NPM data using Azure CosmosDB Graph/Gremlin database.",
+  "author": "Chris Joakim",
+  "license": "",
+  "keywords": [],
+  "main": "app.js",
+  "dependencies": {
+    "@azure/cosmos": "^2.1.5",
+    "async": "^3.0.0",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.4",
+    "express": "^4.17.0",
+    "express-favicon": "^2.0.1",
+    "express-session": "^1.16.1",
+    "gremlin": "^3.3.4",
+    "jade": "^1.11.0",
+    "morgan": "^1.9.1",
+    "numeral": "^2.0.6",
+    "pug": "^2.0.3",
+    "request": "^2.88.0",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.4",
+    "grunt-develop": "^0.4.0",
+    "grunt-contrib-stylus": "^1.0.0",
+    "load-grunt-tasks": "^4.0.0"
+  },
+  "scripts": {
+    "start": "node bin/www"
+  }
+}

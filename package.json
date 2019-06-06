@@ -1,0 +1,11 @@
+{
+  "name": "azure-cosmosdb-graph-npm",
+  "version": "0.1.0",
+  "description": "Batch process for an example Bill-of-Material application with NPM data using Azure CosmosDB Graph/Gremlin database.",
+  "main": "main.js",
+  "dependencies": {
+    "@azure/cosmos": "^2.1.5",
+    "async": "^3.0.0",
+    "gremlin": "^3.3.4"
+  }
+}

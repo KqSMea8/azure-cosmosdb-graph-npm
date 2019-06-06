@@ -1,0 +1,153 @@
+{
+  "name": "gremlin",
+  "description": "JavaScript Gremlin Language Variant",
+  "dist-tags": {
+    "latest": "3.4.1",
+    "beta": "3.4.0-rc1"
+  },
+  "versions": [
+    "0.1.11-a",
+    "0.1.12-a",
+    "0.1.13-a",
+    "0.1.14-a",
+    "0.1.14",
+    "0.2.0",
+    "0.2.1",
+    "0.3.0",
+    "0.3.1",
+    "0.3.12",
+    "0.4.0",
+    "2.0.0",
+    "2.0.1",
+    "2.1.0",
+    "2.2.0",
+    "2.3.0",
+    "2.3.1",
+    "2.3.2",
+    "2.3.3",
+    "2.4.0",
+    "2.5.0",
+    "2.5.1",
+    "2.6.0",
+    "2.7.0",
+    "3.2.8",
+    "3.2.9",
+    "3.2.10",
+    "3.2.11",
+    "3.3.2",
+    "3.3.3",
+    "3.3.4",
+    "3.3.5",
+    "3.3.6",
+    "3.4.0-rc1",
+    "3.4.0",
+    "3.4.1"
+  ],
+  "maintainers": [
+    "hzbarcea <hadrian@apache.org>",
+    "jbmusso <jbmusso@gmail.com>",
+    "jorgebay <jorgebaygondra@gmail.com>",
+    "pluradj <pluradj@gmail.com>",
+    "rdale <robdale@gmail.com>",
+    "spmallette <spmallette@apache.org>",
+    "twilmes <twilmes@gmail.com>"
+  ],
+  "time": {
+    "modified": "2019-03-22T20:42:07.546Z",
+    "created": "2013-04-02T04:57:29.902Z",
+    "0.1.11a": "2013-04-02T05:00:21.055Z",
+    "0.1.12a": "2013-05-20T14:44:28.108Z",
+    "0.1.13a": "2013-05-28T13:07:59.207Z",
+    "0.1.14a": "2013-06-05T01:59:55.767Z",
+    "0.1.14": "2013-08-20T11:32:12.991Z",
+    "0.3.0": "2013-11-30T00:10:04.260Z",
+    "0.1.11-a": "2013-11-21T17:31:07.239Z",
+    "0.1.12-a": "2013-11-21T17:31:07.239Z",
+    "0.1.13-a": "2013-11-21T17:31:07.239Z",
+    "0.1.14-a": "2013-11-21T17:31:07.239Z",
+    "0.2.0": "2013-11-21T17:44:33.561Z",
+    "0.2.1": "2013-11-26T01:51:43.982Z",
+    "0.3.1": "2013-12-04T23:44:05.291Z",
+    "0.3.12": "2013-12-09T18:33:27.598Z",
+    "0.4.0": "2014-10-29T01:02:14.734Z",
+    "2.0.0": "2015-12-19T10:49:43.182Z",
+    "2.0.1": "2016-02-10T22:35:31.557Z",
+    "2.1.0": "2016-02-28T18:03:57.217Z",
+    "2.2.0": "2016-03-19T17:57:45.401Z",
+    "2.3.0": "2016-04-06T20:52:28.783Z",
+    "2.3.1": "2016-04-06T20:55:15.854Z",
+    "2.3.2": "2016-04-13T21:28:22.007Z",
+    "2.3.3": "2017-03-31T20:49:29.356Z",
+    "2.4.0": "2017-05-17T22:53:58.173Z",
+    "2.5.0": "2017-05-25T15:59:58.710Z",
+    "2.5.1": "2017-06-02T22:53:06.079Z",
+    "2.6.0": "2017-08-29T19:42:59.781Z",
+    "2.7.0": "2018-02-08T22:35:15.069Z",
+    "3.2.8": "2018-04-09T12:25:12.192Z",
+    "3.3.2": "2018-04-09T12:41:44.129Z",
+    "3.3.3": "2018-05-14T11:55:04.434Z",
+    "3.2.9": "2018-05-14T13:27:29.626Z",
+    "3.4.0-rc1": "2018-07-02T10:27:27.863Z",
+    "3.2.10": "2018-10-19T17:26:25.669Z",
+    "3.3.4": "2018-10-19T19:16:25.509Z",
+    "3.2.11": "2019-01-08T12:09:18.794Z",
+    "3.3.5": "2019-01-08T12:43:20.971Z",
+    "3.4.0": "2019-01-08T13:00:47.803Z",
+    "3.3.6": "2019-03-22T20:08:00.193Z",
+    "3.4.1": "2019-03-22T20:42:05.074Z"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apache/tinkerpop.git"
+  },
+  "users": {
+    "jimlloyd": true,
+    "mhfrantz": true,
+    "dragma": true
+  },
+  "homepage": "https://tinkerpop.apache.org/",
+  "keywords": [
+    "graph",
+    "gremlin",
+    "tinkerpop",
+    "connection",
+    "glv",
+    "driver",
+    "graphdb"
+  ],
+  "bugs": {
+    "url": "https://issues.apache.org/jira/browse/TINKERPOP"
+  },
+  "license": "Apache-2.0",
+  "readmeFilename": "README.md",
+  "author": "Apache TinkerPop team",
+  "version": "3.4.1",
+  "dependencies": {
+    "ws": "^3.0.0"
+  },
+  "devDependencies": {
+    "mocha": "~4.0.1",
+    "cucumber": "~3.1.0",
+    "chai": "~4.1.2",
+    "grunt": "~1.0.2",
+    "grunt-cli": "~1.2.0",
+    "grunt-jsdoc": "~2.3.0"
+  },
+  "scripts": {
+    "test": "mocha test/unit test/integration -t 5000",
+    "features": "cucumber.js --require test/cucumber ../../../../../gremlin-test/features/",
+    "unit-test": "mocha test/unit"
+  },
+  "engines": {
+    "node": ">=6"
+  },
+  "dist": {
+    "shasum": "0dba8b6b387f780c47e852e3c3ede22d084b734e",
+    "tarball": "https://registry.npmjs.org/gremlin/-/gremlin-3.4.1.tgz",
+    "integrity": "sha512-0OKSP8IktpSVtDi2RLEJQpjWcTDxkOcSyB47u/Y8nbFzU8iw+tKH+F/4PXW4Bci7hFOS4P3uSSXu8WmfyvrvtA==",
+    "fileCount": 98,
+    "unpackedSize": 1714779,
+    "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJclUidCRA9TVsSAnZWagAA0jQP/0cnJ6fQIfLXp6E5gusE\nN43CXD03KhMXm8WWsgkhOpYlMmjfOk3/ap0j8O6gLxKDueQ8SiZ+giwJLnm8\n7i27BIB8fi3qaWdPFLx4TiipQPwdU4fwvFS2GJWp+MYF6FygRPhmuRp4BgRN\nOwVqV/p9dX6nBWEQZ2Gj9ioOllF8ygyRgk6NvKoofykCzEqvZNVWbVzY4Wsp\n15la4U2fM0ZPu0B6fTrAxyzEkuRpvYbFi7Ob2yC7a4Pmv9d5H/Lc/rb1WIY0\naBPNP2RmF7aJhhPnrV5GxGOuHqb9wap1IVXDHUzTRXfsfxL2saEbrqPxWgPa\npLP4GuxaKOnWSaWaq4tVB93JhAYbuhvbIzJjtWnd1qw9WAi0HdZGfob+Y/wi\nJdE/54jHlIIcgf3ntLJ+R0JJH5l2nRdoNj0VXNUfr9xCRX4YSp1GYxhRcD+k\nt1gCJHZX1VAXnGABo37vdIMz3YqP2esMOWXLRi5Eol+Hfq+9f9TdgxIsvNP4\nYR8oApRn0tcnhgQaZ86sOHrZZEwLc5bm8lRNqAGJ/qulKoaCioV7Dqci1Pam\nKaFdy3Vwxy+eZgKWA6WSXCE57zzmzRQuh5xL0EjPliDcx+UgmuHsRlBqeEBy\nMyCmi+0kl/FyzP6EUT4kl02wYnCKvygeqzgPfr/xFnIq21kPOr6DLv3JGgRY\n5/8q\r\n=ljcu\r\n-----END PGP SIGNATURE-----\r\n"
+  },
+  "directories": {}
+}

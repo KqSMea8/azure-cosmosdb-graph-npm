@@ -1,0 +1,48 @@
+extends layout
+block content
+
+  div.container-fluid
+    table(align="center", width="100%", border='0')
+      tr
+        td(align="left", width="30%")
+        td(align="center")
+          h3 Maintainer View
+        td(align="right", width="30%")
+          nav.nav(align="right")
+            a.nav-link(href="/") Home
+            a.nav-link(href="/bom") BOM
+
+  hr 
+
+
+  div.container-fluid
+    h4(align="center") Maintainer Info
+    table(align="center", width="30%", border='0')
+      tr
+        th
+          p(align="left") Attribute
+        th
+          p(align="right") Value
+      tr
+        td(align="left", width="30%")
+          p Id:
+        td(align="right")
+          p= pk
+      tr
+        td(align="left", width="30%")
+          p Email:
+        td(align="right")
+          p= email
+
+  hr
+
+  div.container-fluid
+    h4(align="center") Maintained Libraries
+    table(align="center", width="30%", border='0')
+      each lib in libs
+        tr
+          td(align="center")
+            a(href='/lib/' + lib)= lib
+
+  script(src='../js/maintainer_view.js')
+  
