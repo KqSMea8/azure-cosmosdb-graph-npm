@@ -6,7 +6,7 @@
 iterations=10
 
 rm -rf data/libs/
-mkdir p- data/libs/
+mkdir -p data/libs/
 
 date > tmp/spider_start.txt
 

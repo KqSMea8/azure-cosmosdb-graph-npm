@@ -36,6 +36,8 @@ AZURE_COSMOSDB_GRAPHDB_GRAPH=npm
 AZURE_COSMOSDB_GRAPHDB_VIEWS=views
 AZURE_COSMOSDB_GRAPHDB_KEY= ...secret...
 AZURE_COSMOSDB_GRAPHDB_URI=https://cjoakimcosmosdbgremlin.documents.azure.com:443/
+
+PORT=3000  (Also add this environment variable for the localhost webserver port)
 ```
 
 
@@ -63,11 +65,16 @@ The batch processing does the following:
 ### Batch Processing Detail
 
 Since npm and thus JavaScript is the subject of this Graph, the implementation code is Node.js.
-This Node.js code is portable to Windows, Linux, and macOS.  Only the **shell scripting**
-code should be different on these platforms.
+This Node.js code is portable to Windows, Linux, and macOS.  Both Linux and macOS bash shell 
+scripts (*.sh) and Windows PowerShell Scripts (*.ps1) are provided in this repo.
 
-First install the npm libraries necessary for this project:
+First clone this repository and install the npm libraries necessary for this project
+in the project root directory.
 ```
+$ git clone https://github.com/cjoakim/azure-cosmosdb-graph-npm.git
+$ cd azure-cosmosdb-graph-npm
+$ mkdir tmp
+
 $ npm install 
 ```
 
