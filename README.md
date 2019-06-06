@@ -124,13 +124,12 @@ TODO...
 # Gremlin Queries
 
 ```
-g.V("LIB-m26-js")
-g.V("LIB-m26-js").inE()
-g.V("LIB-m26-js").outE()
+g.V().count()
 
-g.V("LIB-tcx-js").bothE()
+g.V("tcx-js")
+g.V("tcx-js").inE()
+g.V("tcx-js").outE()
+g.V("tcx-js").bothE()
 
-g.V(["LIB-m26-js", "LIB-m26-js"]).inE().limit(10).as('e').outV().as('v').select('e', 'v') 
-g.V(["LIB-m26-js", "LIB-m26-js"]).outE().limit(11).as('e').inV().as('v').select('e', 'v') 
-
+g.V(["tcx-js", "tcx-js"]).emit().repeat(outE("uses_lib").inV()).times(16).path().by("id")
 ```
