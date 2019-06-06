@@ -2,6 +2,10 @@
 
 An example Bill-of-Material application with NPM data using Azure CosmosDB Graph/Gremlin database.
 
+## Created by:
+- Chris Joakim, Microsoft, Cloud Solution Architect
+- Luis Bosquez, Microsoft, CosmosDB Program Manager
+
 ## Links
 
 - https://www.npmjs.com
@@ -156,11 +160,13 @@ $ ./webserver.sh
 g.V().count()
 
 g.V(["tcx-js","tcx-js"])
+g.V(["tedious","tedious"])
 g.V(["express","express"])
 
 g.V(["tcx-js", "tcx-js"]).emit().repeat(outE("uses_lib").inV()).times(16).path().by("id")
 g.V(["express", "express"]).emit().repeat(outE("uses_lib").inV()).times(16).path().by("id")
 
 g.V(["MAINT-cjoakim","MAINT-cjoakim"])
+g.V(["MAINT-luisbosquez","MAINT-luisbosquez"])
 g.V(["MAINT-tjholowaychuk","MAINT-tjholowaychuk"])
 ```
