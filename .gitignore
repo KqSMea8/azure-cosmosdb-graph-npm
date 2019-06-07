@@ -2,9 +2,10 @@
 
 data/tmp/
 node_modules/
-webapp/node_modules/
 tmp/
 
+webapp/build_timestamp.json
+webapp/node_modules/
 
 
 # Logs
