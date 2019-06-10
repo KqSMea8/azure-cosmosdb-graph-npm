@@ -60,7 +60,7 @@ The batch processing does the following:
    - The spider process starts with your hand-edited list of seed npm libraries
    - The spider will iterate n-number of times to get the dependencies of those seed libraries
    - Then dependencies of those libraries, and their dependencies, etc, etc
-   - The command **npm view <library-name> -json** is executed for each library and the JSON response is captured
+   - The command **npm view library -json** is executed for each library and the JSON response is captured
 
 3) Wrangle the JSON files for each library that are captured in the Spidering process.
 
