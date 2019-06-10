@@ -27,7 +27,7 @@ Then create a new collection in your CosmosDB Graph database, as shown below.
 A database named **dev** with collection named **npm** is recommended.
 Specify a partition key named **/pk** and 10,000 RUs.
 
-![provision-gremlin-collection](provision-gremlin-collection.png)
+![provision-gremlin-collection](img/provision-gremlin-collection.png)
 
 Then go to the **Keys panel**, as shown below, and set the following **environment variables** 
 on your computer based on the values you see in Azure Portal.
@@ -120,6 +120,161 @@ Also load the Azure CosmosDB Graph database, views collection, with the material
 
 ```
 $ ./load_materialized_views.sh
+```
+
+### What do the Materialized View docuuments look like:
+
+#### For Libraries:
+
+```
+  {
+    "name": "express",
+    "desc": "Fast, unopinionated, minimalist web framework",
+    "keywords": [
+      "express",
+      "framework",
+      "sinatra",
+      "web",
+      "rest",
+      "restful",
+      "router",
+      "app",
+      "api"
+    ],
+    "dependencies": {
+      "accepts": "~1.3.7",
+      "array-flatten": "1.1.1",
+      "body-parser": "1.19.0",
+      "content-disposition": "0.5.3",
+      "content-type": "~1.0.4",
+      "cookie": "0.4.0",
+      "cookie-signature": "1.0.6",
+      "debug": "2.6.9",
+      "depd": "~1.1.2",
+      "encodeurl": "~1.0.2",
+      "escape-html": "~1.0.3",
+      "etag": "~1.8.1",
+      "finalhandler": "~1.1.2",
+      "fresh": "0.5.2",
+      "merge-descriptors": "1.0.1",
+      "methods": "~1.1.2",
+      "on-finished": "~2.3.0",
+      "parseurl": "~1.3.3",
+      "path-to-regexp": "0.1.7",
+      "proxy-addr": "~2.0.5",
+      "qs": "6.7.0",
+      "range-parser": "~1.2.1",
+      "safe-buffer": "5.1.2",
+      "send": "0.17.1",
+      "serve-static": "1.14.1",
+      "setprototypeof": "1.1.1",
+      "statuses": "~1.5.0",
+      "type-is": "~1.6.18",
+      "utils-merge": "1.0.1",
+      "vary": "~1.1.2"
+    },
+    "devDependencies": {
+      "after": "0.8.2",
+      "connect-redis": "3.4.1",
+      "cookie-parser": "~1.4.4",
+      "cookie-session": "1.3.3",
+      "ejs": "2.6.1",
+      "eslint": "2.13.1",
+      "express-session": "1.16.1",
+      "hbs": "4.0.4",
+      "istanbul": "0.4.5",
+      "marked": "0.6.2",
+      "method-override": "3.0.0",
+      "mocha": "5.2.0",
+      "morgan": "1.9.1",
+      "multiparty": "4.2.1",
+      "pbkdf2-password": "1.2.1",
+      "should": "13.2.3",
+      "supertest": "3.3.0",
+      "vhost": "~3.0.2"
+    },
+    "author": "TJ Holowaychuk <tj@vision-media.ca>",
+    "users": {
+      "422303771": true,
+      "coverslide": true,
+      ... many users ...
+      "payaamemami": true,
+      "pvoronin": true,
+      "spaceface777": true
+    },
+    "contributors": [
+      "Aaron Heckmann <aaron.heckmann+github@gmail.com>",
+      "Ciaran Jessup <ciaranj@gmail.com>",
+      "Douglas Christopher Wilson <doug@somethingdoug.com>",
+      "Guillermo Rauch <rauchg@gmail.com>",
+      "Jonathan Ong <me@jongleberry.com>",
+      "Roman Shtylman <shtylman+expressjs@gmail.com>",
+      "Young Jae Sim <hanul@hanul.me>"
+    ],
+    "maintainers": [
+      "dougwilson <doug@somethingdoug.com>",
+      "jasnell <jasnell@gmail.com>",
+      "mikeal <mikeal.rogers@gmail.com>"
+    ],
+    "version": "4.17.1",
+    "versions": [
+      "0.14.0",
+      "0.14.1",
+      ... many versions ...
+      "4.17.0",
+      "4.17.1",
+      "5.0.0-alpha.1",
+      "5.0.0-alpha.2",
+      "5.0.0-alpha.3",
+      "5.0.0-alpha.4",
+      "5.0.0-alpha.5",
+      "5.0.0-alpha.6",
+      "5.0.0-alpha.7"
+    ],
+    "time": {
+      "modified": "2019-05-28T18:15:26.253Z",
+      "created": "2010-12-29T19:38:25.450Z",
+      "0.14.0": "2010-12-29T19:38:25.450Z",
+      "0.14.1": "2010-12-29T19:38:25.450Z",
+      ... many version times ...
+      "4.17.1": "2019-05-26T04:25:34.606Z"
+    },
+    "homepage": "http://expressjs.com/",
+    "pk": "express",
+    "key": "express",
+    "doctype": "library"
+  },
+```
+
+#### For Maintainers:
+
+```
+  {
+    "email": "<tj@vision-media.ca>",
+    "libs": [
+      "basic-auth",
+      "better-assert",
+      "bytes",
+      "callsite",
+      "commander",
+      "component-emitter",
+      "cookie-signature",
+      "debug",
+      "delegates",
+      "escape-html",
+      "growl",
+      "indexof",
+      "merge-descriptors",
+      "methods",
+      "object-component",
+      "range-parser",
+      "statuses",
+      "throttleit"
+    ],
+    "pk": "tjholowaychuk",
+    "key": "tjholowaychuk",
+    "doctype": "maintainer"
+  }
 ```
 
 ---
