@@ -123,7 +123,7 @@ Also load the Azure CosmosDB Graph database, views collection, with the material
 $ ./load_materialized_views.sh
 ```
 
-### What do the Materialized View docuuments look like:
+### What do the Materialized View documents look like:
 
 #### For Libraries:
 
