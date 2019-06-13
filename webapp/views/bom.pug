@@ -7,6 +7,13 @@ block content
 
   div.container-fluid
     table(align="center", width="100%", border='0')
+      tr(style="vertical-align:top")
+        td
+          a(href='/')
+            img(src='../img/montage.png', height='80px')
+
+  div.container-fluid
+    table(align="center", width="100%", border='0')
       tr
         td(align="left", width="30%")
           input(type="text", form="bom_form", id="bom_id", name='bom_id', placeholder="BOM Id", width="60px", value=(undefined===bom_id ? '' : bom_id))
@@ -14,8 +21,7 @@ block content
         td(align="center")
           h3 Bill-of-Material View
         td(align="right", width="30%")
-          nav.nav(align="right")
-            a.nav-link(href="/") Home
+          p
 
     hr
     svg(width="900" height="1200" align="center")
