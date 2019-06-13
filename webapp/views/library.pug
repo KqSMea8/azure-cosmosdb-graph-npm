@@ -56,24 +56,25 @@ block content
   hr
 
   div.container-fluid
-    table(align="center", width="80%", border='1')
-      tr
-        td
-          h4(align="center") Maintainers
-          table(align="center", width="30%", border='0')
+    table(align="left", width="90%", border='0')
+      tr(style="vertical-align:top")
+        td(width="50%")
+          h4(align="right") Maintainers
+          table(align="right", width="90%", border='0')
             each maintainer in maintainers
               tr
-                td(align="center")
+                td(align="right")
                   a(href='/maint/' + maintainer.split(' ')[0])= maintainer
-        td
+
+        td(width="5%")
           p 
-        td
-          h4(align="center") Maintainers
-          table(align="center", width="30%", border='0')
-            each maintainer in maintainers
+        td(width="45%")
+          h4(align="left") Dependencies
+          table(align="left", width="90%", border='0')
+            each val, index in dependencies
               tr
-                td(align="center")
-                  a(href='/maint/' + maintainer.split(' ')[0])= maintainer
+                td(align="left")
+                  a(href='/lib/' + index)= index
 
   script(src='../js/library_view.js')
   
