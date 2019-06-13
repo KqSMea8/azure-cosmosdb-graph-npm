@@ -17,37 +17,42 @@ block content
   div.container-fluid
     h4(align="center") General Info
     table(align="center", width="60%", border='0')
-      tr
+      tr(style="vertical-align:top")
         th
           p(align="left", width="20%") Attribute
         th
           p(align="left") Value
-      tr
+      tr(style="vertical-align:top")
         td(align="left", width="20%")
           p Name:
         td(align="left")
-          p(href='/lib/show_bom/' + name)= name
-      tr
+          a(href='/lib/show_bom/' + name)= name
+      tr(style="vertical-align:top")
         td(align="left", width="20%")
           p Description:
         td(align="left")
           p= desc
-      tr
+      tr(style="vertical-align:top")
         td(align="left", width="15%")
           p Keywords:
         td(align="left")
           p= keywords.join(' ')
-      tr
+      tr(style="vertical-align:top")
         td(align="left", width="15%")
           p Author:
         td(align="left")
           p= author
-      tr
+      tr(style="vertical-align:top")
+        td(align="left", width="15%")
+          p NPM page:
+        td(align="left")
+          a(href='https://www.npmjs.com/package/' + name)= name
+      tr(style="vertical-align:top")
         td(align="left", width="15%")
           p Homepage:
         td(align="left")
           a(href='' + homepage)= homepage
-      tr
+      tr(style="vertical-align:top")
         td(align="left", width="15%")
           p Current Version:
         td(align="left")
@@ -62,7 +67,7 @@ block content
           h4(align="right") Maintainers
           table(align="right", width="90%", border='0')
             each maintainer in maintainers
-              tr
+              tr(style="vertical-align:top")
                 td(align="right")
                   a(href='/maint/' + maintainer.split(' ')[0])= maintainer
 
@@ -72,7 +77,7 @@ block content
           h4(align="left") Dependencies
           table(align="left", width="90%", border='0')
             each val, index in dependencies
-              tr
+              tr(style="vertical-align:top")
                 td(align="left")
                   a(href='/lib/' + index)= index
 
