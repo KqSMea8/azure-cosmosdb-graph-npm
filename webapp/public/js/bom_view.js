@@ -35,7 +35,7 @@ d3.csv("bom/csv", function(error, data) {
 
   node.append("text")
       .attr("dy", 3)
-      .attr("x", function(d) { return d.children ? 49 : 15; })
+      .attr("x", function(d) { return d.children ? 20 : 4; })
       .style("text-anchor", function(d) { return d.children ? "end" : "start"; })
       .text(function(d) { return d.id.substring(d.id.lastIndexOf(".") + 1); });
 

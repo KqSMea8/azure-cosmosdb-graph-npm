@@ -17,7 +17,7 @@ router.get('/', function(req, res) {
     resp_obj['bom_id'] = sess.curr_bom_id;
   }
   else {
-    resp_obj['bom_id'] = 'tcx-js';
+    resp_obj['bom_id'] = 'tedious';  // 'tcx-js';
   }
   res.render('bom', resp_obj);
 });
