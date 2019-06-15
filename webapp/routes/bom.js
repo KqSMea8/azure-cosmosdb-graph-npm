@@ -66,15 +66,26 @@ router.get('/tooltip/:bom_id', function(req, res) {
   req.app.locals.dao.materialized_library_view(bom_id).then(function(result) {
     var lib_obj = result['result'][0];
     try {
+      // TODO - refactor this common routine into a separate module; see library.js#get
       var now_ms = new Date().getTime();
       var created_epoch = lib_obj['created_epoch'];
       var version_epoch = lib_obj['version_epoch'];
       var created_age_ms = now_ms - created_epoch;
       var version_age_ms = now_ms - version_epoch;
-      lib_obj['library_age_days'] = Math.round(created_age_ms / MS_PER_DAY);
-      lib_obj['version_age_days'] = Math.round(version_age_ms / MS_PER_DAY);
-      lib_obj['version_date'] = lib_obj['version_date'].split('T')[0];
-      lib_obj['created_date'] = lib_obj['created_date'].split('T')[0];
+      var curr_version   = lib_obj['version'];
+      var version_count  = lib_obj['versions'].length;
+      var version_date   = lib_obj['version_date'].split('T')[0];
+      var created_date   = lib_obj['created_date'].split('T')[0];
+
+      // recalculate ages based on current date/time
+      var library_age_days  = Math.round(created_age_ms / MS_PER_DAY);
+      var library_age_years = library_age_days / 365.25;
+      var version_age_days  = Math.round(version_age_ms / MS_PER_DAY);
+      lib_obj['library_age_days'] = library_age_days;
+      lib_obj['version_age_days'] = version_age_days;
+
+      lib_obj['tooltip_info'] = 
+        util.format("%s, v%s on %s (%s days)", bom_id, curr_version, version_date, version_age_days);
       lib_obj['now'] = now_ms;
       console.log(lib_obj);
     }
