@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Bash shell script to wrangle the data obtained by the "spider_npm" process.
-# Chris Joakim, Microsoft, 2019/06/06
+# Chris Joakim, Microsoft, 2019/06/15
 
 node main.js aggregate_lib_files
 

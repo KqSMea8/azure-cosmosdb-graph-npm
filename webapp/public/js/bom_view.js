@@ -43,7 +43,15 @@ d3.csv("bom/csv", function(error, data) {
   d3.selectAll("h3").on("click", radio_button_changed);
 
   d3.selectAll("text").on("click", function(){
-    library_clicked(this);
+    library_click(this);
+  });
+
+  d3.selectAll("text").on("mouseover", function(){
+    library_mouseover(this);
+  });
+
+  d3.selectAll("text").on("mouseout", function(){
+    library_mouseout(this);
   });
 
   var timeout = setTimeout(function() {
@@ -83,10 +91,23 @@ function reset_text_font() {
       .style("font-weight", "plain")
       .style("fill", "#555");
 }
-function library_clicked(t) { 
+
+function library_click(t) { 
   var bom_id = t.innerHTML;
-  console.log('library_clicked: ' + bom_id);
+  console.log('library_click: ' + bom_id);
   window.location.href = "/lib/" + bom_id;
+}
+
+function library_mouseover(t) { 
+  var bom_id = t.innerHTML;
+  console.log('library_mouseover: ' + bom_id);
+  $("#lib_info").text(bom_id);
+}
+
+function library_mouseout(t) { 
+  var html = t.innerHTML;
+  console.log('library_mouseout: ' + bom_id);
+  $("#lib_info").text("");
 }
 
 function bom_btn_click() {
