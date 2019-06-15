@@ -198,7 +198,8 @@ $ ./load_materialized_views.sh
     "users": {
       "422303771": true,
       "coverslide": true,
-      ... many users ...
+      "gevorg": true,
+       ... many users ...
       "payaamemami": true,
       "pvoronin": true,
       "spaceface777": true
@@ -221,30 +222,40 @@ $ ./load_materialized_views.sh
     "versions": [
       "0.14.0",
       "0.14.1",
-      ... many versions ...
-      "4.17.0",
-      "4.17.1",
-      "5.0.0-alpha.1",
-      "5.0.0-alpha.2",
-      "5.0.0-alpha.3",
-      "5.0.0-alpha.4",
-      "5.0.0-alpha.5",
-      "5.0.0-alpha.6",
-      "5.0.0-alpha.7"
+      "1.0.0",
+      "1.0.1",
+      "1.0.2",
+      "1.0.3",
+      ... many versions...
+      "3.21.0",
+      "3.21.1",
+      "3.21.2",
     ],
     "time": {
       "modified": "2019-05-28T18:15:26.253Z",
       "created": "2010-12-29T19:38:25.450Z",
       "0.14.0": "2010-12-29T19:38:25.450Z",
       "0.14.1": "2010-12-29T19:38:25.450Z",
-      ... many version times ...
+      ... many versions ...
       "4.17.1": "2019-05-26T04:25:34.606Z"
     },
     "homepage": "http://expressjs.com/",
+    "user_count": 2556,
+    "dependencies_count": 30,
+    "maintainers_count": 3,
+    "versions_count": 263,
+    "usage_count": 1,
+    "used_in": [],
+    "version_date": "2019-05-26T04:25:34.606Z",
+    "created_date": "2010-12-29T19:38:25.450Z",
+    "created_epoch": 1293651505450,
+    "version_epoch": 1558844734606,
+    "library_age_days": 3090,
+    "version_age_days": 20,
     "pk": "express",
     "key": "express",
     "doctype": "library"
-  },
+  }
 ```
 
 #### For Maintainers:
