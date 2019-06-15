@@ -10,6 +10,9 @@ const os      = require('os');
 
 const D3CsvUtil = require('../util/d3_csv_util').D3CsvUtil;
 
+const MS_PER_DAY = 1000 * 60 * 60 * 24;
+
+
 router.get('/', function(req, res) {
   var sess = req.session;
   var resp_obj = {};
@@ -23,7 +26,7 @@ router.get('/', function(req, res) {
 });
 
 router.post('/', function(req, res) {
-  var bom_id = req.body. bom_id;
+  var bom_id = req.body.bom_id;
   console.log('bom_router post / ' + bom_id);
   var sess = req.session;
   sess.curr_bom_id = bom_id;
@@ -52,6 +55,35 @@ router.get('/csv', function(req, res) {
     res.set('Content-Type', 'text/csv');
     res.status(200).send('');
   }
+});
+
+// curl -v "http://localhost:3000/bom/tooltip/tedious" | jq
+// curl -v "http://localhost:3000/bom/tooltip/@azure|amqp-common" | jq
+router.get('/tooltip/:bom_id', function(req, res) {
+  var bom_id = '' + req.params.bom_id.replace("/", "|");
+  console.log('bom_id: ' + bom_id);
+
+  req.app.locals.dao.materialized_library_view(bom_id).then(function(result) {
+    var lib_obj = result['result'][0];
+    try {
+      var now_ms = new Date().getTime();
+      var created_epoch = lib_obj['created_epoch'];
+      var version_epoch = lib_obj['version_epoch'];
+      var created_age_ms = now_ms - created_epoch;
+      var version_age_ms = now_ms - version_epoch;
+      lib_obj['library_age_days'] = Math.round(created_age_ms / MS_PER_DAY);
+      lib_obj['version_age_days'] = Math.round(version_age_ms / MS_PER_DAY);
+      lib_obj['version_date'] = lib_obj['version_date'].split('T')[0];
+      lib_obj['created_date'] = lib_obj['created_date'].split('T')[0];
+      lib_obj['now'] = now_ms;
+      console.log(lib_obj);
+    }
+    catch(e) {
+      console.log(lib_obj);
+      console.log(e);
+    }
+    res.json(lib_obj);
+  });
 });
 
 module.exports = router;

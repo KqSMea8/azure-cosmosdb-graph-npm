@@ -100,9 +100,44 @@ function library_click(t) {
 
 function library_mouseover(t) { 
   var bom_id = t.innerHTML;
+  var url = 'bom/tooltip/' + bom_id.replace("/", "|");
   console.log('library_mouseover: ' + bom_id);
-  $("#lib_info").text(bom_id);
+  $("#lib_info").text('' + bom_id + ' ...');
+
+  $.get(url, function(data) {
+    console.log(data);
+    try {
+
+
+    }
+    catch(e) {
+      console.log(e);
+    } 
+  });
 }
+
+// user_count: 46,
+// dependencies_count: 3,
+// maintainers_count: 6,
+// versions_count: 87,
+// usage_count: 11,
+// used_in:
+//  [ 'are-we-there-yet',
+//    'bl',
+//    'concat-stream',
+//    'duplexer2',
+//    'mysql',
+//    'static-module',
+//    'stream-browserify',
+//    'stream-http',
+//    'tedious',
+//    'through2' ],
+// version_date: '2019-05-28T05:57:22.671Z',
+// created_date: '2012-07-27T04:46:57.281Z',
+// created_epoch: 1343364417281,
+// version_epoch: 1559023042671,
+// library_age_days: 2514,
+// version_age_days: 18,
 
 function library_mouseout(t) { 
   var html = t.innerHTML;

@@ -50,7 +50,7 @@ block content
       each lib in libs
         tr
           td(align="center")
-            a(href='/lib/' + lib)= lib
+            a(href='/lib/' + lib.replace("/", "|"))= lib
 
   script(src='../js/maintainer_view.js')
   

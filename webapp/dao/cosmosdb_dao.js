@@ -109,7 +109,6 @@ class CosmosDbDao extends events.EventEmitter {
         query_spec['parameters'] = [];
         return await this.sql_client.database(db_name).container(coll_name).items.query(query_spec).toArray();
     }
-
 }
 
 module.exports.CosmosDbDao = CosmosDbDao;
